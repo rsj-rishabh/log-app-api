@@ -1,0 +1,2 @@
+class LogDatum < ApplicationRecord
+end
