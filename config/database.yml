@@ -24,8 +24,8 @@ default: &default
 development:
   <<: *default
   database: log_app_api_development
-  user: <%=ENV('DBUSER')%>
-  password: <%%=ENV('DBPASS')>
+  user: <%= ENV("DBUSER") %>
+  password: <%= ENV("DBPASS") %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -60,8 +60,8 @@ development:
 test:
   <<: *default
   database: log_app_api_test
-  user: <%=ENV('DBUSER')%>
-  password: <%%=ENV('DBPASS')>
+  user: <%= ENV("DBUSER") %>
+  password: <%= ENV("DBPASS") %>
 
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -87,5 +87,5 @@ test:
 production:
   <<: *default
   database: log_app_api_production
-  user: <%=ENV('DBUSER')%>
-  password: <%%=ENV('DBPASS')>
+  user: <%= ENV("DBUSER") %>
+  password: <%= ENV("DBPASS") %>
