@@ -36,4 +36,14 @@ Things you may want to cover:
   ]
 
   The seed program extracts only the conversational part and stores it in the database.
-  The API fetched data from the database and gives it as JSON output.
+  The API fetched data from the database and gives it as JSON output of the form:
+
+  [
+    log_index: <some unique number>,
+    log_info: [
+        {
+            'user': <some dialogue>,
+            'bot': <some dialogue>
+        }
+    ]
+  ]
