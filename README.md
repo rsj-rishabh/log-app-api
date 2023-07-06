@@ -5,20 +5,35 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 3.0.0
 
 * System dependencies
 
 * Configuration
+  Add values for below ENV variables - DBUSER, DBPASS
 
-* Database creation
+* Database creation - PostGRESql. Run `rake db:migrate`.
 
-* Database initialization
+* Database initialization - PostGRESql. Run `rake db:seed`
 
-* How to run the test suite
+* Services - API to show processed logs
 
-* Services (job queues, cache servers, search engines, etc.)
+* Deployment instructions - Run `rails s`
 
-* Deployment instructions
+* Implementation 
+  The raw log dataset is of the below form: 
+  [
+    [
+      {
+        'speaker': <U/S>,
+        'text': <Some english sentence>,
+        'stats': {
+            'text': <some sentence>,
+            'score': <some number>
+        }
+      }
+    ]
+  ]
 
-* ...
+  The seed program extracts only the conversational part and stores it in the database.
+  The API fetched data from the database and gives it as JSON output.
