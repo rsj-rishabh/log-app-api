@@ -20,8 +20,8 @@ Things you may want to cover:
 
 * Deployment instructions - Run `rails s`
 
-* Implementation 
-  The raw log dataset is of the below form: 
+* Implementation
+  The log dataset is taken from this link [JSON Log Dataset](https://github.com/alexa/alexa-with-dstc10-track2-dataset/blob/main/task2/data/test/logs.json) and is in the below format: 
   [
     [
       {
@@ -51,3 +51,6 @@ Things you may want to cover:
   * API URL -> `http://<ec2_domain_name>/api/v1/logs?page=<page number>`
 
   * Hosted on AWS using EC2, RDS, Nginx, and Load Balancer
+ 
+  * Architecture
+    ![alt text](https://github.com/rsj-rishabh/log-app-api/blob/main/log-app-design.png?raw=true)
