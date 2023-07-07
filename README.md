@@ -54,3 +54,5 @@ Things you may want to cover:
  
   * Architecture
     ![alt text](https://github.com/rsj-rishabh/log-app-api/blob/main/log-app-design.png?raw=true)
+
+  * Click here to view the [results](https://main.d28zewofy1t5kt.amplifyapp.com/)
